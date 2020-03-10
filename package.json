@@ -1,0 +1,10 @@
+{
+  "name": "api-docs",
+  "version": "1.0.0",
+  "description": "Test the smart pension api",
+  "main": "index.js",
+  "license": "MIT",
+  "dependencies": {
+    "dredd": "^13.0.1"
+  }
+}

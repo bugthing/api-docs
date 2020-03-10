@@ -1,0 +1,65 @@
+openapi: "3.0.0"
+info:
+  title: Smart Pension API
+  version: "11"
+paths:
+  /:
+    get:
+      summary: List API endpoints
+      responses:
+        '200':
+          description: A JSON object of named endpoints
+          content:
+            "application/json; charset=utf-8":
+              schema: 
+                type: object
+                properties:
+                  "employees_verify_credentials":
+                    type: string
+                    example: "/employees/verify_credentials"
+                  "customers_verify_credentials":
+                    type: string
+                    example: "/customers/verify_credentials"
+                  "users_verify_credentials":
+                    type: string
+                    example: "/users/verify_credentials"
+                  "create_company":
+                    type: string
+                    example: "/companies"
+                  "create_adviser":
+                    type: string
+                    example: "/advisers"
+                  "constants":
+                    type: string
+                    example: "/constants"
+                  "errors":
+                    type: string
+                    example: "/errors"
+                  "company_by_name":
+                    type: string
+                    example: "/companies/by_name"
+                  "company_by_slug":
+                    type: string
+                    example: "/companies/by_slug"
+                  "customers_by_email":
+                    type: string
+                    example: "/customers/by_email"
+                  "customer_password":
+                    type: string
+                    example: "/customers/password"
+                  "customers_referrals":
+                    type: string
+                    example: "/customers/referrals"
+                  "employees_referrals":
+                    type: string
+                    example: "/employees/referrals"
+                  "employees_password":
+                    type: string
+                    example: "/employees/password"
+                  "users_password":
+                    type: string
+                    example: "/users/password"
+                  "tpr":
+                    type: string
+                    example: /tpr/staging_date
+
